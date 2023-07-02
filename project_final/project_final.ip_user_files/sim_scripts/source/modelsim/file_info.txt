@@ -1,0 +1,3 @@
+pll_main_clk_wiz.v,verilog,xil_defaultlib,c:/Users/FasleJadid/Desktop/final-project/source/pll_main_clk_wiz.v,
+pll_main.v,verilog,xil_defaultlib,c:/Users/FasleJadid/Desktop/final-project/source/pll_main.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

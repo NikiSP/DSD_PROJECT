@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../project_final.srcs/sources_1/imports/source" \
+"../../../../project_final.srcs/sources_1/imports/source/bhv_1w1r_sram.sv" \
+"../../../../project_final.srcs/sources_1/imports/source/cnn.sv" \
+"../../../../project_final.srcs/sources_1/imports/source/lenet.sv" \
+"../../../../project_final.srcs/sources_1/imports/source/lenet_roms.sv" \
+"../../../../project_final.srcs/sources_1/imports/source/xilinx_1w1r_sram.sv" \
+"../../../../project_final.srcs/sources_1/imports/source/xilinx_srams.sv" \
+"../../../../project_final.srcs/sources_1/imports/source/lenet_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

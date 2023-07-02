@@ -1,0 +1,159 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Jul  2 20:46:15 2023
+| Host         : DESKTOP-TKP11SS running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file system_top_control_sets_placed.rpt
+| Design       : system_top
+| Device       : xcku040
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    85 |
+| Unused register locations in slices containing registers |    69 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      3 |            1 |
+|      4 |           13 |
+|      5 |           11 |
+|      7 |           10 |
+|      8 |            2 |
+|      9 |            1 |
+|     10 |            2 |
+|     11 |            1 |
+|     12 |           24 |
+|     14 |            1 |
+|    16+ |           19 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              79 |           28 |
+| No           | No                    | Yes                    |            6107 |         1289 |
+| No           | Yes                   | No                     |              48 |           17 |
+| Yes          | No                    | No                     |              24 |            4 |
+| Yes          | No                    | Yes                    |            2477 |          734 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+----------------------------------------------------------------------------------------------------------------------+----------------------+------------------+----------------+
+|       Clock Signal      |                                                     Enable Signal                                                    |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
++-------------------------+----------------------------------------------------------------------------------------------------------------------+----------------------+------------------+----------------+
+|  clk_ref_BUFG           |                                                                                                                      | dlyRst0/rstn_i_1_n_0 |                2 |              3 |
+|  pll_main/inst/clk_out2 | lenet/conv_fc3/out_num[0].acc/q_en_reg_0[0]                                                                          | dlyRst0/rstn         |                3 |              4 |
+|  pll_main/inst/clk_out2 | lenet/iterator_conv1/cnt_ky[3]_i_1_n_0                                                                               | dlyRst0/rstn         |                2 |              4 |
+|  pll_main/inst/clk_out2 | lenet/iterator_pooling2/row[4]_i_1__2_n_0                                                                            | dlyRst0/rstn         |                2 |              4 |
+|  pll_main/inst/clk_out2 | lenet/iterator_FC1/cnt_ky[3]_i_1__4_n_0                                                                              | dlyRst0/rstn         |                3 |              4 |
+|  pll_main/inst/clk_out2 | lenet/E[0]                                                                                                           | dlyRst0/rstn         |                3 |              4 |
+|  pll_main/inst/clk_out2 | lenet/iterator_fc3/cnt_ky[3]_i_1__3_n_0                                                                              | dlyRst0/rstn         |                3 |              4 |
+|  pll_main/inst/clk_out2 | lenet/iterator_pooling1/col[4]_i_1__0_n_0                                                                            | dlyRst0/rstn         |                1 |              4 |
+|  pll_main/inst/clk_out2 | lenet/iterator_pooling1/cnt_ky[3]_i_1__0_n_0                                                                         | dlyRst0/rstn         |                3 |              4 |
+|  pll_main/inst/clk_out2 | lenet/iterator_fc2/cnt_ky[3]_i_1__5_n_0                                                                              | dlyRst0/rstn         |                3 |              4 |
+|  pll_main/inst/clk_out2 | lenet/iterator_conv2/cnt_ky[3]_i_1__1_n_0                                                                            | dlyRst0/rstn         |                2 |              4 |
+|  pll_main/inst/clk_out2 | lenet/iterator_pooling1/row[4]_i_1__0_n_0                                                                            | dlyRst0/rstn         |                2 |              4 |
+|  pll_main/inst/clk_out2 | lenet/iterator_pooling2/cnt_ky[3]_i_1__2_n_0                                                                         | dlyRst0/rstn         |                2 |              4 |
+|  pll_main/inst/clk_out2 | lenet/iterator_pooling2/col[4]_i_1__2_n_0                                                                            | dlyRst0/rstn         |                1 |              4 |
+|  pll_main/inst/clk_out2 | lenet/iterator_FC1/col[4]_i_1__4_n_0                                                                                 | dlyRst0/rstn         |                3 |              5 |
+|  pll_main/inst/clk_out2 | lenet/iterator_fc3/col[4]_i_1__3_n_0                                                                                 | dlyRst0/rstn         |                2 |              5 |
+|  pll_main/inst/clk_out2 | lenet/iterator_fc3/row[4]_i_1__3_n_0                                                                                 | dlyRst0/rstn         |                2 |              5 |
+|  pll_main/inst/clk_out2 | lenet/iterator_conv1/col[4]_i_1_n_0                                                                                  | dlyRst0/rstn         |                2 |              5 |
+|  pll_main/inst/clk_out2 | lenet/iterator_conv1/row[4]_i_1_n_0                                                                                  | dlyRst0/rstn         |                1 |              5 |
+|  pll_main/inst/clk_out2 | lenet/iterator_fc2/col[4]_i_1__5_n_0                                                                                 | dlyRst0/rstn         |                1 |              5 |
+|  pll_main/inst/clk_out2 | lenet/iterator_conv2/row[4]_i_1__1_n_0                                                                               | dlyRst0/rstn         |                2 |              5 |
+|  pll_main/inst/clk_out2 | lenet/iterator_fc2/row[4]_i_1__5_n_0                                                                                 | dlyRst0/rstn         |                3 |              5 |
+|  pll_main/inst/clk_out2 | lenet/iterator_conv2/col[4]_i_1__1_n_0                                                                               | dlyRst0/rstn         |                1 |              5 |
+|  pll_main/inst/clk_out2 | lenet/iterator_conv2/ready_reg_0[0]                                                                                  | dlyRst0/rstn         |                1 |              5 |
+|  pll_main/inst/clk_out2 | lenet/iterator_FC1/row[4]_i_1__4_n_0                                                                                 | dlyRst0/rstn         |                2 |              5 |
+|  pll_main/inst/clk_out2 | lenet/iterator_FC1/batch_cnt[6]_i_1__4_n_0                                                                           | dlyRst0/rstn         |                3 |              7 |
+|  pll_main/inst/clk_out2 | lenet/iterator_conv2/batch_cnt[6]_i_1__1_n_0                                                                         | dlyRst0/rstn         |                3 |              7 |
+|  pll_main/inst/clk_out2 | lenet/iterator_fc3/batch_cnt[6]_i_1__3_n_0                                                                           | dlyRst0/rstn         |                2 |              7 |
+|  pll_main/inst/clk_out2 | lenet/iterator_conv1/batch_cnt[6]_i_1_n_0                                                                            | dlyRst0/rstn         |                3 |              7 |
+|  pll_main/inst/clk_out2 | lenet/iterator_pooling2/batch_cnt[6]_i_1__2_n_0                                                                      | dlyRst0/rstn         |                2 |              7 |
+|  pll_main/inst/clk_out2 | lenet/iterator_fc2/batch_cnt[6]_i_1__5_n_0                                                                           | dlyRst0/rstn         |                4 |              7 |
+|  pll_main/inst/clk_out2 | lenet/iterator_pooling2/E[0]                                                                                         | dlyRst0/rstn         |                2 |              7 |
+|  pll_main/inst/clk_out2 | lenet/iterator_pooling1/E[0]                                                                                         | dlyRst0/rstn         |                2 |              7 |
+|  pll_main/inst/clk_out2 | lenet/iterator_FC1/E[0]                                                                                              | dlyRst0/rstn         |                2 |              7 |
+|  pll_main/inst/clk_out2 | lenet/iterator_pooling1/batch_cnt[6]_i_1__0_n_0                                                                      | dlyRst0/rstn         |                2 |              7 |
+|  pll_main/inst/clk_out2 | lenet/iterator_conv1/E[0]                                                                                            | dlyRst0/rstn         |                3 |              8 |
+|  vo_clk_OBUF_BUFG       | digit_osd/aa_osd_rom[7]_i_1_n_0                                                                                      | dlyRst0/rstn         |                5 |              8 |
+|  vo_clk_OBUF_BUFG       | digit_osd/osd_data[4]_i_1_n_0                                                                                        | dlyRst0/rstn         |                5 |              9 |
+|  pll_main/inst/clk_out2 | go_CDC_go_capture_ready/E[0]                                                                                         | dlyRst0/rstn         |                2 |             10 |
+|  vo_clk_OBUF_BUFG       | capture_lenet/ab_frame_buf[0]_i_1_n_0                                                                                | dlyRst0/rstn         |                2 |             10 |
+|  vo_clk_OBUF_BUFG       | capture_lenet/cnt_v                                                                                                  | dlyRst0/rstn         |                4 |             11 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[2].max_temp[2][11]_i_1__0_n_0                                                             | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[10].max_temp[10][11]_i_1_n_0                                                              | dlyRst0/rstn         |                2 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[7].max_temp[7][11]_i_1_n_0                                                                | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[4].max_temp[4][11]_i_1__0_n_0                                                             | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[5].max_temp[5][11]_i_1__0_n_0                                                             | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[9].max_temp[9][11]_i_1_n_0                                                                | dlyRst0/rstn         |                3 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[8].max_temp[8][11]_i_1_n_0                                                                | dlyRst0/rstn         |                3 |             12 |
+|  pll_main/inst/clk_out2 | lenet/iterator_fc2/cena_reg_0                                                                                        |                      |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[6].max_temp[6][11]_i_1_n_0                                                                | dlyRst0/rstn         |                3 |             12 |
+|  pll_main/inst/clk_out2 | lenet/iterator_fc3/E[0]                                                                                              |                      |                3 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling1/out_num[0].max_temp[0][11]_i_1_n_0                                                                | dlyRst0/rstn         |                2 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling1/out_num[2].max_temp[2][11]_i_1_n_0                                                                | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling1/out_num[1].max_temp[1][11]_i_1_n_0                                                                | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling1/out_num[3].max_temp[3][11]_i_1_n_0                                                                | dlyRst0/rstn         |                3 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling1/out_num[5].max_temp[5][11]_i_1_n_0                                                                | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[11].max_temp[11][11]_i_1_n_0                                                              | dlyRst0/rstn         |                2 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[0].max_temp[0][11]_i_1__0_n_0                                                             | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[13].max_temp[13][11]_i_1_n_0                                                              | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[14].max_temp[14][11]_i_1_n_0                                                              | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling1/out_num[4].max_temp[4][11]_i_1_n_0                                                                | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[15].max_temp[15][11]_i_1_n_0                                                              | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[12].max_temp[12][11]_i_1_n_0                                                              | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[1].max_temp[1][11]_i_1__0_n_0                                                             | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/max_pooling2/out_num[3].max_temp[3][11]_i_1__0_n_0                                                             | dlyRst0/rstn         |                1 |             12 |
+|  pll_main/inst/clk_out2 | lenet/conv_fc3/out_num[0].acc/E[0]                                                                                   | dlyRst0/rstn         |                6 |             14 |
+|  pll_main/inst/clk_out2 | lenet/relu_fc2_buf/u/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_63_0_6_i_1_n_0   |                      |                2 |             16 |
+|  pll_main/inst/clk_out2 | lenet/relu_fc2_buf/u/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_64_127_0_6_i_1_n_0 |                      |                2 |             16 |
+|  pll_main/inst/clk_out2 | lenet/relu_fc1_buf/u/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_63_0_6_i_1_n_0   |                      |                2 |             16 |
+|  pll_main/inst/clk_out2 | lenet/relu_fc1_buf/u/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_64_127_0_6_i_1_n_0 |                      |                2 |             16 |
+|  pll_main/inst/clk_out2 | lenet/iterator_fc3/E[0]                                                                                              | dlyRst0/rstn         |                4 |             17 |
+|  vo_clk_OBUF_BUFG       | draw_rectangle/E[0]                                                                                                  | dlyRst0/rstn         |                9 |             22 |
+|  pll_main/inst/clk_out2 | lenet/conv_fc1/out_num[0].acc/mac/q_mac_en                                                                           | dlyRst0/rstn         |                3 |             24 |
+|  clk_ref_BUFG           | dlyRst0/sel                                                                                                          | dlyRst0/rstn_i_1_n_0 |                3 |             24 |
+|  pll_main/inst/clk_out2 | lenet/conv_fc3/out_num[0].acc/mac/q_mac_en                                                                           | dlyRst0/rstn         |                3 |             24 |
+|  pll_main/inst/clk_out2 | lenet/conv_fc2/out_num[0].acc/mac/q_mac_en                                                                           | dlyRst0/rstn         |                3 |             24 |
+|  pll_main/inst/clk_out2 |                                                                                                                      |                      |               10 |             52 |
+|  pll_main/inst/clk_out2 | lenet/iterator_conv1/cena_reg_0[0]                                                                                   | dlyRst0/rstn         |               18 |             68 |
+|  vo_clk_OBUF_BUFG       |                                                                                                                      |                      |               18 |             97 |
+|  pll_main/inst/clk_out2 | lenet/conv1/out_num[0].acc/mac/d_en_d_reg[1]_0                                                                       | dlyRst0/rstn         |               18 |            144 |
+|  pll_main/inst/clk_out2 | lenet/iterator_FC1/cena_reg_0[0]                                                                                     | dlyRst0/rstn         |              178 |            183 |
+|  vo_clk_OBUF_BUFG       |                                                                                                                      | dlyRst0/rstn         |               60 |            246 |
+|  pll_main/inst/clk_out2 | lenet/conv2/out_num[0].acc/mac/d_en_d_reg[4]_0                                                                       | dlyRst0/rstn         |               48 |            384 |
+|  pll_main/inst/clk_out2 | lenet/iterator_conv2/E[0]                                                                                            | dlyRst0/rstn         |              332 |           1052 |
+|  pll_main/inst/clk_out2 |                                                                                                                      | dlyRst0/rstn         |             1245 |           5906 |
++-------------------------+----------------------------------------------------------------------------------------------------------------------+----------------------+------------------+----------------+
+
+

@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"c:/Users/FasleJadid/Desktop/final-project/source/pll_main_clk_wiz.v" \
+"c:/Users/FasleJadid/Desktop/final-project/source/pll_main.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
