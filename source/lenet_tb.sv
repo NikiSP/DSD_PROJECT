@@ -166,7 +166,7 @@ interface itf_frame_feed(input clk);
 		integer						fd;
 		integer						errno;
 		reg			[640-1:0]		errinfo;
-		logic [`MAX_PATH*8-1:0]	sequence_name = "c:/Users/mohse/Desktop/FuckDSD/vivado-simluate-project/source/test_1000f.yuv";
+		logic [`MAX_PATH*8-1:0]	sequence_name = "C:/Users/FasleJadid/Desktop/final-project/source/test_1000f.yuv";
 		go		 <= 0;
 		@cb;
 		@cb;
